@@ -1,0 +1,17 @@
+início {
+    real: salario1;
+    real: salario_liquido;
+    real: desconto_inss;
+    real: desconto_transporte;
+        
+    leia ("Informe seu salario registrado", salario1);
+       
+    desconto_transporte = (salario1 * 6) / 100;
+    
+    desconto_inss = (salario1 * 9) / 100;
+  
+    salario_liquido = salario1 - desconto_transporte - desconto_inss;
+    
+    escreva ("Seu salario liquido é de R$:" + salario_liquido);
+    
+}
